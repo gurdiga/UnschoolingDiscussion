@@ -21,3 +21,8 @@ stats:
 	@jq '.ygData.numTopics' topics.json
 	@ls -1 topic-*.json | wc -l
 	@du -shc topic-*.json | tail -1
+
+edit:
+	code -n .
+
+e: edit
