@@ -1,8 +1,10 @@
+default: pages
+
 build:
-	bundle exec jekyll build
+	bundle exec jekyll build --incremental
 
 start:
-	bundle exec jekyll serve
+	bundle exec jekyll serve --incremental
 
 s: start
 
@@ -14,8 +16,12 @@ s: start
 
 .ONESHELL:
 
-download:
-	/Users/vlad/.rvm/rubies/ruby-2.3.4/bin/ruby downloader.rb
+posts:
+	rvm `cat .ruby-version` do ruby create-posts.rb
+
+cache:
+	rvm `cat .ruby-version` do ruby downloader.rb
+.PHONY: cache
 
 stats:
 	@jq '.ygData.numTopics' topics.json
