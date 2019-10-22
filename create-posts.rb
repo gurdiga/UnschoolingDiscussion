@@ -26,7 +26,7 @@ def create_post(json)
         <<-EOM
 <article>
 <h4>#{message["author"]}</h4>
-<time>#{format_time(message["time"])}</time>
+<p><small><time>#{format_time(message["time"])}</time></small></p>
 
 #{message["body"]}
 </article>
