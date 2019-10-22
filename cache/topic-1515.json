@@ -1,0 +1,59 @@
+{
+  "ygPerms": {
+    "resourceCapabilityList": [
+      { "resourceType": "GROUP", "capabilities": [{ "name": "READ" }, { "name": "JOIN" }] },
+      { "resourceType": "PHOTO", "capabilities": [] },
+      { "resourceType": "FILE", "capabilities": [] },
+      { "resourceType": "MEMBER", "capabilities": [] },
+      { "resourceType": "LINK", "capabilities": [] },
+      { "resourceType": "CALENDAR", "capabilities": [] },
+      { "resourceType": "DATABASE", "capabilities": [] },
+      { "resourceType": "POLL", "capabilities": [] },
+      { "resourceType": "MESSAGE", "capabilities": [{ "name": "READ" }] },
+      { "resourceType": "PENDING_MESSAGE", "capabilities": [] },
+      { "resourceType": "ATTACHMENTS", "capabilities": [] },
+      { "resourceType": "PHOTOMATIC_ALBUMS", "capabilities": [] },
+      { "resourceType": "MEMBERSHIP_TYPE", "capabilities": [] },
+      { "resourceType": "POST", "capabilities": [{ "name": "READ" }] },
+      { "resourceType": "PIN", "capabilities": [] }
+    ],
+    "groupUrl": "groups.yahoo.com",
+    "intlCode": "us"
+  },
+  "comscore": "pageview_candidate",
+  "ygData": {
+    "totalMsgInTopic": 2,
+    "messages": [
+      {
+        "userId": 247566989,
+        "authorName": "Anonymous",
+        "from": "Anonymous",
+        "profile": "Anonymous",
+        "replyTo": "LIST",
+        "spamInfo": { "isSpam": false, "reason": "12" },
+        "subject": "Could not read this message from Yahoo API",
+        "postDate": "1358280397",
+        "msgId": 113580,
+        "canDelete": false,
+        "contentTrasformed": false,
+        "systemMessage": false,
+        "headers": {
+          "messageIdInHeader": "PEZDMzAwNTQxLTY4Q0ItNDFBOC04QzZDLUNEQjhGREE2NjQ1QUBTYW5kcmFkb2RkLmNvbT4=",
+          "inReplyToHeader": "PGtkNGJlYys3bmk5QGVHcm91cHMuY29tPg==",
+          "referencesHeader": "PGtkNGJlYys3bmk5QGVHcm91cHMuY29tPg=="
+        },
+        "prevInTopic": 113579,
+        "nextInTopic": 0,
+        "prevInTime": 113579,
+        "nextInTime": 0,
+        "topicId": 113579,
+        "numMessagesInTopic": 0,
+        "msgSnippet": "This is a fake message because the system errored out when trying I tried to download it.",
+        "messageBody": "This is a fake message because the system errored out when trying I tried to download it.",
+        "specialLinks": []
+      }
+    ],
+    "prevTopicId": 1525,
+    "nextTopicId": 1534
+  }
+}

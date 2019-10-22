@@ -31,9 +31,9 @@ clean:
 		cache/topic-`jq .ygData.lastTopic cache/topics.json`.json
 
 stats:
-	@jq '.ygData.numTopics' topics.json
-	@ls -1 topic-*.json | wc -l
-	@du -shc topic-*.json | tail -1
+	@jq '.ygData.numTopics' cache/topics.json
+	@ls -1 cache/ | wc -l
+	@du -shc cache/ | tail -1
 
 edit:
 	code -n .

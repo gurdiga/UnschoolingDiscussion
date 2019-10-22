@@ -1,0 +1,105 @@
+---
+layout: post
+title: >-
+  Worm/virus remedy
+date: 2001-04-20 18:37:44 UTC
+author: >-
+  louisam1@juno.com
+slug: "19328"
+excerpt_separator: <!--there-is-no-excerpt-separator-expected-ever-->
+---
+{% raw %}
+<article>
+<h4>louisam1@juno.com</h4>
+<time>20 Apr 2001, at 11:37am</time>
+
+<div id="ygrps-yiv-2090668433">Someone on another list posted this remedy for the email worm.  It is<br/>
+exactly the process I went through and it worked perfectly.<br/>
+<br/>
+Kris<br/>
+<br/>
+<br/>
+<br/>
+To create a boot disk under Windows 95,98 or ME.<br/>
+<br/>
+Click on the Start button,  click on Setting and select Control Panel.  A<br/>
+window will open with a number of program icons.  Click on Add/remove<br/>
+programs. Click on the tab that says &quot;Create Disk&quot;.  Click on the button<br/>
+that says, &quot;Create bootdisk&quot;.  This will create a bootable floppy. <br/>
+Follow the directions to create the disk.  You will need a blank floppy<br/>
+that will become the Windows Boot Disk.<br/>
+<br/>
+After the boot disk has been created, put the floppy in the disk drive<br/>
+and reboot the computer (Start, shutdown, reboot).  As the computer boots<br/>
+off the floppy, it will present a menu.  Select Command prompt/minimum<br/>
+boot.  <br/>
+<br/>
+After a short while you should see &quot;C:&#92;&quot;.  &quot;Type in &quot;cd &#92;windows&#92;&quot;<br/>
+without the quotes and then press enter. <br/>
+Type &quot;dir inetd.exe&quot;  and then press enter. <br/>
+You should see the following.<br/>
+<br/>
+c:&#92;windows&#92;&gt;dir inetd.exe<br/>
+<br/>
+    Volume in drive C is unlabeled      Serial number is 1569:1BE4<br/>
+     Directory of  C:&#92;WINDOWS&#92;inetd.exe<br/>
+<br/>
+     4-20-01   1:17              14  inetd.exe<br/>
+             14 bytes in 1 file and 0 dirs    4,096 bytes allocated<br/>
+      4,585,545,728 bytes free<br/>
+<br/>
+Now type &quot;del inetd.exe&quot;  and then press enter<br/>
+You should see the following.<br/>
+<br/>
+    c:&#92;windows&#92;&gt;del inetd.exe<br/>
+    Deleting C:&#92;WINDOWS&#92;inetd.exe<br/>
+        1 file deleted<br/>
+<br/>
+   c:&#92;windows&#92;&gt;<br/>
+<br/>
+Do the same for kern32.exe.<br/>
+<br/>
+Now you need to edit the win.ini file.<br/>
+<br/>
+Type in &quot;edit win.ini&quot; and press enter. <br/>
+You should see the second line say:<br/>
+  [windows]<br/>
+  run=c:&#92;windows&#92;kern32.exe <br/>
+or <br/>
+  run=c:&#92;windows&#92;inetd.exe<br/>
+Remove the text to the right of the = sign, so that the line now reads<br/>
+  run= <br/>
+<br/>
+This will stop the worm from running.  Remove the floppy disk and reboot<br/>
+the PC.<br/>
+You may see some error messages stating that indetd.exe or kern32.exe can<br/>
+not be found.<br/>
+This is a good sign as it means you have deleted the worm.<br/>
+<br/>
+Now we need to delete the windows registy entries that have inetd.exe or<br/>
+kern32.exe.  <br/>
+<br/>
+1. Click Start, and then click Run. The Run dialog box appears.<br/>
+2. Type regedit and then click OK. The Registry Editor opens.<br/>
+3. Navigate to the following subkey:<br/>
+<br/>
+HKEY_CURRENT_USER&#92;Software&#92;Microsoft&#92;<br/>
+Windows&#92;CurrentVersion&#92;RunOnce<br/>
+<br/>
+<br/>
+4. In the right pane, delete the following value:<br/>
+<br/>
+Kernel32 KERN32.EXE<br/>
+<br/>
+5. Click Registry and then click Exit to save the changes.<br/>
+<br/>
+Congratulations, you have removed the worm from your Computer!<br/>
+<br/>
+________________________________________________________________<br/>
+GET INTERNET ACCESS FROM JUNO!<br/>
+Juno offers FREE or PREMIUM Internet access for less!<br/>
+Join Juno today!  For your FREE software, visit:<br/>
+<a rel="nofollow" target="_blank" href="http://dl.www.juno.com/get/tagj.">http://dl.www.juno.com/get/tagj.</a></div>
+</article>
+
+{% endraw %}

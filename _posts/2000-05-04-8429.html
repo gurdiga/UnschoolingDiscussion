@@ -1,0 +1,133 @@
+---
+layout: post
+title: >-
+  [Fwd: Important Delete ILOVEYOU  - Email virus]]
+date: 2000-05-04 15:41:05 UTC
+author: >-
+  susan
+slug: "8429"
+excerpt_separator: <!--there-is-no-excerpt-separator-expected-ever-->
+---
+{% raw %}
+<article>
+<h4>susan</h4>
+<time> 4 May 2000, at  8:41am</time>
+
+<div id="ygrps-yiv-1547534963">&quot;taffie for Susan Frederick &quot; wrote:<br/>
+<br/>
+<blockquote><span title="qreply"> &gt; Normally, virus warnings tend to be hoaxes, but this one is real:<br/>
+&gt;<br/>
+&gt; -------- Original Message --------<br/>
+&gt; The following analysis is the work of the researchers at Frisk Software<br/>
+&gt; International, primarily Dr. Vesselin Bontchev and Peter Ferrie.<br/>
+&gt;<br/>
+&gt; The worm poses a risk to users that have Windows Scripting Host<br/>
+&gt; (including<br/>
+&gt; Win &#39;98 users, users who have installed IE 5.x in default mode, users<br/>
+&gt; who<br/>
+&gt; have installed WSH specifically, and probably users of Windows 2000).<br/>
+&gt;<br/>
+&gt; The worm will only spread from infected machines that have Outlook &#39;98<br/>
+&gt; or Outlook 2000 installed, but it will damage/overwrite files even if<br/>
+&gt; Outlook is not in use.<br/>
+&gt;<br/>
+&gt; The worm is received either as an e-mail attachment or via IRC.  If the<br/>
+&gt; user does not open (double-click on) the attached file, the worm will<br/>
+&gt; not<br/>
+&gt; run or do any damage.<br/>
+&gt;<br/>
+&gt; If it is received via e-mail, the Subject: of the message<br/>
+&gt; is &quot;ILOVEYOU&quot; and the body of the message says<br/>
+&gt;<br/>
+&gt;    kindly check the attached LOVELETTER coming from me.<br/>
+&gt;<br/>
+&gt; The name of the attachment is LOVE-LETTER-FOR-YOU.TXT.vbs<br/>
+&gt; (which, if the system is configured not to show the<br/>
+&gt; extensions of the files, will look like a TXT file to the<br/>
+&gt; user).<br/>
+&gt;<br/>
+&gt; If it is received via IRC, it resides in a file named<br/>
+&gt; LOVE-LETTER-FOR-YOU.HTM.<br/>
+&gt;<br/>
+&gt; When executed, the worm makes copies of itself under<br/>
+&gt; the names MSKernel32.vbs and LOVE-LETTER-FOR-YOU.TXT.vbs<br/>
+&gt; in the Windows System directory and under the name<br/>
+&gt; Win32DLL.vbs in the Windows directory. Then it modifies<br/>
+&gt; the Registry, so that the files Win32DLL.vbs and<br/>
+&gt; MSKernel32.vbs will be executed every time Windows is<br/>
+&gt; started.<br/>
+&gt;<br/>
+&gt; Then the worm modifies the Registry, changing the<br/>
+&gt; startup page of the Internet Explorer, so that when IE<br/>
+&gt; is started, it will download a file named WIN-BUGSFIX.exe<br/>
+&gt; from one of 4 possible places on <a rel="nofollow" target="_blank" href="http://www.skyinet.net">http://www.skyinet.net</a><br/>
+&gt; (randomly selected) and the Registry is modified, so<br/>
+&gt; that this file is executed the next time Windows is<br/>
+&gt; started.<br/>
+&gt;<br/>
+&gt; Then the worm creates an HTML version of itself, in a<br/>
+&gt; file named LOVE-LETTER-FOR-YOU.HTM in the Windows System<br/>
+&gt; directory.<br/>
+&gt;<br/>
+&gt; Next, the worm starts a copy of Outlook in the<br/>
+&gt; background (only Outlook 98 or 2000 will work - not<br/>
+&gt; Outlook 97 or Outlook Express). It examines all Outlook<br/>
+&gt; Address Books and, if an Outlook Address Book contains<br/>
+&gt; more addresses than the Windows Address Book, the worm<br/>
+&gt; mass-mails itself to all addresses in that Outlook<br/>
+&gt; Address Book. (The worm does NOT mass-mail itself to<br/>
+&gt; any addresses in the Windows Address Book.)<br/>
+&gt;<br/>
+&gt; Finally, the worm examines all directories on all hard<br/>
+&gt; and network drives. If a file has one of the following<br/>
+&gt; extensions: VBS, VBE, JS, JSE, CSS, WSH, SCT, HTA, MP2,<br/>
+&gt; MP3, JPG or JPEG the worm overwrites the file with a<br/>
+&gt; copy of itself. If the extension was not VBS or VBE, the<br/>
+&gt; worm adds the extension VBS to the name of the file -<br/>
+&gt; so that, for instance, PICTURE.JPG becomes<br/>
+&gt; PICTURE.JPG.vbs. In case a MP2 or MP3 file was<br/>
+&gt; overwritten, the worm also sets its file attribute to<br/>
+&gt; ReadOnly.<br/>
+&gt;<br/>
+&gt; If, during this directory traversal, any of the following<br/>
+&gt; files is found: mirc32.exe, mlink32.exe, mirc.ini,<br/>
+&gt; script.ini or mirc.hlp, the worm drops in that directory<br/>
+&gt; a file named SCRIPT.INI which begins with the comments<br/>
+&gt;<br/>
+&gt; ;mIRC Script<br/>
+&gt; ;  Please dont edit this script... mIRC will corrupt, if mIRC will<br/>
+&gt;       corrupt... WINDOWS will affect and will not run correctly. thanks<br/>
+&gt; ;<br/>
+&gt; ;Khaled Mardam-Bey<br/>
+&gt; ;<a rel="nofollow" target="_blank" href="http://www.mirc.com">http://www.mirc.com</a><br/>
+&gt;<br/>
+&gt; This file tries to send the file LOVE-LETTER-FOR-YOU.HTM<br/>
+&gt; from the Windows System directory via IRC&#39;s command /DCC<br/>
+&gt; to all users joining the IRC channel which the infected<br/>
+&gt; user is on.<br/>
+&gt;<br/>
+&gt; The worm sets or modifies the following Registry keys:<br/>
+&gt;<br/>
+&gt; HKEY_CURRENT_USER&#92;Software&#92;Microsoft&#92;Windows Scripting<br/>
+&gt; Host&#92;Settings&#92;Timeout<br/>
+&gt; HKEY_LOCAL_MACHINE&#92;Software&#92;Microsoft&#92;Windows&#92;CurrentVersion&#92;Run&#92;MSKernel32<br/>
+&gt; HKEY_LOCAL_MACHINE&#92;Software&#92;Microsoft&#92;Windows&#92;CurrentVersion&#92;RunServices&#92;Win<br/>
+&gt; 32DLL<br/>
+&gt; HKEY_CURRENT_USER&#92;Software&#92;Microsoft&#92;Internet Explorer&#92;Download<br/>
+&gt; Directory<br/>
+&gt; HKEY_CURRENT_USER&#92;Software&#92;Microsoft&#92;Internet Explorer&#92;Main&#92;Start Page<br/>
+&gt;<br/>
+&gt; The file WIN-BUGSFIX.exe is a Backdoor created in the<br/>
+&gt; Phillippines which collects the network passwords cached<br/>
+&gt; by Windows and sends them to an attacker&#39;s site when the<br/>
+&gt; infected user connects to the Internet.<br/>
+&gt; --<br/>
+&gt; Fridrik Skulason      Frisk Software International     phone:<br/>
+&gt; +354-5-617273<br/>
+&gt; Author of F-PROT      E-mail: <a rel="nofollow" target="_blank" href="mailto:frisk@...">frisk@...</a>         fax:<br/>
+&gt; +354-5-617274<br/>
+&gt; Barb Baxter<br/>
+&gt; ---------------------------------------------------------------------- </span></blockquote></div>
+</article>
+
+{% endraw %}

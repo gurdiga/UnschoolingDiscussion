@@ -3,10 +3,10 @@ require 'json'
 require 'pp'
 
 def main
-    previous_topic_id = get_json('https://groups.yahoo.com/api/v1/groups/AlwaysLearning/topics')["ygData"]["lastTopic"]
+    previous_topic_id = get_json('https://groups.yahoo.com/api/v1/groups/UnschoolingDiscussion/topics')["ygData"]["lastTopic"]
 
     while previous_topic_id != 0 do
-        topic_url = "https://groups.yahoo.com/api/v1/groups/AlwaysLearning/topics/#{previous_topic_id}"
+        topic_url = "https://groups.yahoo.com/api/v1/groups/UnschoolingDiscussion/topics/#{previous_topic_id}"
 
         filename = "topic-#{previous_topic_id}.json"
         previous_topic_id = get_json(topic_url, filename)["ygData"]["prevTopicId"]
