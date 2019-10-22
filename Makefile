@@ -25,9 +25,10 @@ cache:
 	rvm `cat .ruby-version` do ruby downloader.rb
 .PHONY: cache
 
-re-cache:
-	rm cache/topics.json
-	rm cache/topic-78621.json
+clean:
+	rm -v \
+		cache/topics.json \
+		cache/topic-`jq .ygData.lastTopic cache/topics.json`.json
 
 stats:
 	@jq '.ygData.numTopics' topics.json
