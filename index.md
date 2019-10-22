@@ -5,7 +5,7 @@
 layout: home
 ---
 
-## The static copy of the “Always Learning” Yahoo! group on unschooling.
+**The static copy of the “Always Learning” Yahoo! group on unschooling: https://groups.yahoo.com/neo/groups/AlwaysLearning.**
 
 How and why does unschooling work? What kind of parents and parenting does it take? What will help, and what will hinder?
 
