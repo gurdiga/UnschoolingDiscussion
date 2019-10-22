@@ -21,17 +21,26 @@ def get_json(url, filename = nil)
     basename = filename || "#{File.basename(url)}.json"
     path = "cache/#{basename}"
 
-    json = if File.exist?(path) then
+    if path != "cache/topics.json" && File.exist?(path) then
         puts "Found cached response for #{url}"
-        IO.read(path)
-    else
-        puts "Fetching #{url}"
-        response = open(url, headers).read
-        IO.write(path, response)
-        response
+        cached_json = IO.read(path)
+        parsed_cached_json = JSON.parse(cached_json)
+
+        unless parsed_cached_json['ygData']['messages'] then
+            pp path
+            pp parsed_cached_json['ygData']
+        end
+
+        post_timestamp = parsed_cached_json['ygData']['messages'].first['postDate'].to_i
+        file_timestamp = File.mtime(path).to_i
+
+        return parsed_cached_json if post_timestamp < file_timestamp
     end
 
-    JSON.parse(json)
+    puts "Fetching #{url}"
+    fetched_json = open(url, headers).read
+    IO.write(path, fetched_json)
+    JSON.parse(fetched_json)
 end
 
 main

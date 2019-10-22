@@ -25,7 +25,8 @@ def create_post(json)
     body = messages.map do |message|
         <<-EOM
 <article>
-<h4>#{message["author"]} at #{message["time"].to_s} said:</h4>
+<h4>#{message["author"]}</h4>
+<time>#{format_time(message["time"])}</time>
 
 #{message["body"]}
 </article>
@@ -57,11 +58,15 @@ excerpt_separator: <!--there-is-no-excerpt-separator-expected-ever-->
     IO.write("_posts/#{post_filename}", post_content)
 end
 
+def format_time(time)
+    (time - 7 * 3600).strftime("%e %b %Y, at %l:%M%P")
+end
+
 def get_post_data(message)
     {
         "id" => message["topicId"],
         "title" => CGI.unescapeHTML(message["subject"] || ""),
-        "time" => Time.at(message["postDate"].to_i),
+        "time" => Time.at(message["postDate"].to_i).utc,
         "author" => get_author(message),
         "body" => message["messageBody"]
     }
