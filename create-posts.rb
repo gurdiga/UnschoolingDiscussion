@@ -32,7 +32,7 @@ def create_post(json)
         EOM
     end.join('<hr style="margin: 3em 0"/>')
 
-    post_filename = "#{initial_message["time"].strftime("%F")}-#{initial_message["id"]}.md"
+    post_filename = "#{initial_message["time"].strftime("%F")}-#{initial_message["id"]}.html"
     post_content = <<-EOP
 ---
 layout: post
