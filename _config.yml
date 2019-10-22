@@ -13,13 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Always Learning
+title: Unschooling Discussion
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   This is a list for the examination of the philosophy of unschooling and
   attentive parenting and a place for sharing examined lives based on the
   principles underlying unschooling.
-baseurl: "/AlwaysLearning" # the subpath of your site, e.g. /blog
+baseurl: "/UnschoolingDiscussion" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /topic/:slug/
 show_excerpts: false
