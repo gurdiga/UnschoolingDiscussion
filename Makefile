@@ -18,7 +18,7 @@ s: start
 
 posts:
 	rvm `cat .ruby-version` do ruby create-posts.rb
-
+	rm ./_posts/2013-01-15-113579.html # Because it’s a placeholder; could not read from API.
 
 
 cache:
