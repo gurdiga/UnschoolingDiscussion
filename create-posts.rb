@@ -43,6 +43,7 @@ date: #{initial_message["time"].to_s}
 author: >-
   #{initial_message["author"]}
 slug: "#{initial_message["id"]}"
+description: ""
 excerpt_separator: <!--there-is-no-excerpt-separator-expected-ever-->
 ---
 {% raw %}
