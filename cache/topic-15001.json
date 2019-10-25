@@ -1,1 +1,55 @@
-{"ygPerms":{"resourceCapabilityList":[{"resourceType":"GROUP","capabilities":[{"name":"READ"},{"name":"JOIN"}]},{"resourceType":"PHOTO","capabilities":[]},{"resourceType":"FILE","capabilities":[]},{"resourceType":"MEMBER","capabilities":[]},{"resourceType":"LINK","capabilities":[]},{"resourceType":"CALENDAR","capabilities":[]},{"resourceType":"DATABASE","capabilities":[]},{"resourceType":"POLL","capabilities":[]},{"resourceType":"MESSAGE","capabilities":[{"name":"READ"}]},{"resourceType":"PENDING_MESSAGE","capabilities":[]},{"resourceType":"ATTACHMENTS","capabilities":[]},{"resourceType":"PHOTOMATIC_ALBUMS","capabilities":[]},{"resourceType":"MEMBERSHIP_TYPE","capabilities":[]},{"resourceType":"POST","capabilities":[{"name":"READ"}]},{"resourceType":"PIN","capabilities":[]}],"groupUrl":"groups.yahoo.com","intlCode":"us"},"comscore":"pageview_candidate","ygData":{"totalMsgInTopic":1,"messages":[{"userId":0,"authorName":"kalima","from":"kalima &lt;kalima@...&gt;","replyTo":"LIST","senderId":"f64IpNTkIZISCMWSceNU9mZNcE64FlMTYv4l53oayLQYUZ0-7GYHmCviNKsUdamTCUfdaExsMNFtpq0aZCUUG2HcW_Q","spamInfo":{"isSpam":false,"reason":"0"},"subject":"gameboy and video games (my 2¢)\u0004","postDate":"979142508","msgId":15001,"canDelete":false,"contentTrasformed":false,"systemMessage":false,"headers":{"messageIdInHeader":"PDNBNUM4NzZCLkE2NTNGNkQ0QG9wdG9ubGluZS5uZXQ+"},"prevInTopic":0,"nextInTopic":0,"prevInTime":15000,"nextInTime":15002,"topicId":15001,"numMessagesInTopic":0,"msgSnippet":"I have to give my 2¢ on video games and gameboys. I was one who didnt want the darn things in my house. In my mind I had it they would rot my kids brains and","messageBody":"<div id=\"ygrps-yiv-844859388\">I have to give my 2¢ on video games and gameboys. I was one who didnt<br/>\nwant the darn things in my house. In my mind I had it they would rot my<br/>\nkids brains and they would become lazy and not want to do anything but<br/>\nplay them. Hey I am big enough to admit I felt the same way about Legos.<br/>\nI know what was I thinking? Still deschooling I suppose.<br/>\n<br/>\nWalk into my house now you will find my son (9) not only has a gameboy<br/>\nbut a subscription to some game magazine. We also picked up an old Sega<br/>\ngenisis (ok so we aren&#39;t hip but so far no complaints). Why the change?<br/>\nMy dh bought Nate one and I put the rule he had to get x amount of work<br/>\ndone around the house before game time. Well then I noticed the kid who<br/>\nhated to read was reading the manual. Nate swore up and down he couldnt<br/>\nread. But there he was sitting on the couch reading. We went up  to a<br/>\nused game store and picked up more games with his allowence and he got a<br/>\nmembership that came with a magazine subscription to I believe it is The<br/>\nGame Informer (or something like that). I don&#39;t really know as soon as<br/>\nit hits the mail box Nate grabs it and runs to his room and reads it.<br/>\nAgain this is my son who didn&#39;t want to read.<br/>\n<br/>\nI had to say this since someone else posted they worried their kid would<br/>\nplay nintendo all day. My son has gone from not reading at all to<br/>\nreading chapter books and actually enjoying a trip to the library<br/>\nbecause I let a gameboy in the house. Who knew. *L*<br/>\n<br/>\nSo never under estimate the learning power of something even if you<br/>\ndon&#39;t see it. This is what I am finding out as we take this unschooling<br/>\njourney.<br/>\n<br/>\nShelly<br/>\nmom to 5<br/>\nConnecticut</div>","specialLinks":[]}],"prevTopicId":15000,"nextTopicId":15008}}
+{
+  "ygPerms": {
+    "resourceCapabilityList": [
+      { "resourceType": "GROUP", "capabilities": [{ "name": "READ" }, { "name": "JOIN" }] },
+      { "resourceType": "PHOTO", "capabilities": [] },
+      { "resourceType": "FILE", "capabilities": [] },
+      { "resourceType": "MEMBER", "capabilities": [] },
+      { "resourceType": "LINK", "capabilities": [] },
+      { "resourceType": "CALENDAR", "capabilities": [] },
+      { "resourceType": "DATABASE", "capabilities": [] },
+      { "resourceType": "POLL", "capabilities": [] },
+      { "resourceType": "MESSAGE", "capabilities": [{ "name": "READ" }] },
+      { "resourceType": "PENDING_MESSAGE", "capabilities": [] },
+      { "resourceType": "ATTACHMENTS", "capabilities": [] },
+      { "resourceType": "PHOTOMATIC_ALBUMS", "capabilities": [] },
+      { "resourceType": "MEMBERSHIP_TYPE", "capabilities": [] },
+      { "resourceType": "POST", "capabilities": [{ "name": "READ" }] },
+      { "resourceType": "PIN", "capabilities": [] }
+    ],
+    "groupUrl": "groups.yahoo.com",
+    "intlCode": "us"
+  },
+  "comscore": "pageview_candidate",
+  "ygData": {
+    "totalMsgInTopic": 1,
+    "messages": [
+      {
+        "userId": 0,
+        "authorName": "kalima",
+        "from": "kalima &lt;kalima@...&gt;",
+        "replyTo": "LIST",
+        "senderId": "f64IpNTkIZISCMWSceNU9mZNcE64FlMTYv4l53oayLQYUZ0-7GYHmCviNKsUdamTCUfdaExsMNFtpq0aZCUUG2HcW_Q",
+        "spamInfo": { "isSpam": false, "reason": "0" },
+        "subject": "gameboy and video games (my 2¢)",
+        "postDate": "979142508",
+        "msgId": 15001,
+        "canDelete": false,
+        "contentTrasformed": false,
+        "systemMessage": false,
+        "headers": { "messageIdInHeader": "PDNBNUM4NzZCLkE2NTNGNkQ0QG9wdG9ubGluZS5uZXQ+" },
+        "prevInTopic": 0,
+        "nextInTopic": 0,
+        "prevInTime": 15000,
+        "nextInTime": 15002,
+        "topicId": 15001,
+        "numMessagesInTopic": 0,
+        "msgSnippet": "I have to give my 2¢ on video games and gameboys. I was one who didnt want the darn things in my house. In my mind I had it they would rot my kids brains and",
+        "messageBody": "<div id=\"ygrps-yiv-844859388\">I have to give my 2¢ on video games and gameboys. I was one who didnt<br/>\nwant the darn things in my house. In my mind I had it they would rot my<br/>\nkids brains and they would become lazy and not want to do anything but<br/>\nplay them. Hey I am big enough to admit I felt the same way about Legos.<br/>\nI know what was I thinking? Still deschooling I suppose.<br/>\n<br/>\nWalk into my house now you will find my son (9) not only has a gameboy<br/>\nbut a subscription to some game magazine. We also picked up an old Sega<br/>\ngenisis (ok so we aren&#39;t hip but so far no complaints). Why the change?<br/>\nMy dh bought Nate one and I put the rule he had to get x amount of work<br/>\ndone around the house before game time. Well then I noticed the kid who<br/>\nhated to read was reading the manual. Nate swore up and down he couldnt<br/>\nread. But there he was sitting on the couch reading. We went up  to a<br/>\nused game store and picked up more games with his allowence and he got a<br/>\nmembership that came with a magazine subscription to I believe it is The<br/>\nGame Informer (or something like that). I don&#39;t really know as soon as<br/>\nit hits the mail box Nate grabs it and runs to his room and reads it.<br/>\nAgain this is my son who didn&#39;t want to read.<br/>\n<br/>\nI had to say this since someone else posted they worried their kid would<br/>\nplay nintendo all day. My son has gone from not reading at all to<br/>\nreading chapter books and actually enjoying a trip to the library<br/>\nbecause I let a gameboy in the house. Who knew. *L*<br/>\n<br/>\nSo never under estimate the learning power of something even if you<br/>\ndon&#39;t see it. This is what I am finding out as we take this unschooling<br/>\njourney.<br/>\n<br/>\nShelly<br/>\nmom to 5<br/>\nConnecticut</div>",
+        "specialLinks": []
+      }
+    ],
+    "prevTopicId": 15000,
+    "nextTopicId": 15008
+  }
+}
