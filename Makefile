@@ -18,17 +18,20 @@ s: start
 
 posts:
 	rvm `cat .ruby-version` do ruby create-posts.rb
-	rm ./_posts/2013-01-15-113579.html # Because it’s a placeholder; could not read from API.
-
+	rm -vf _posts/*-1515.html
 
 cache:
 	rvm `cat .ruby-version` do ruby downloader.rb
 .PHONY: cache
 
-clean:
+clean-cache:
 	rm -v \
 		cache/topics.json \
 		cache/topic-`jq .ygData.lastTopic cache/topics.json`.json
+
+clean:
+	find _posts -type f -delete
+	rm -rf _site
 
 stats:
 	@jq '.ygData.numTopics' cache/topics.json
@@ -39,3 +42,12 @@ edit:
 	code -n .
 
 e: edit
+
+include .env
+upload:
+	lftp -u gurdiga@sandradodd.com ftp.sandradodd.com \
+		--password $(LFTP_PASSWORD) \
+		-e '\
+			mirror --delete --reverse --parallel=5 --continue _site archive/UnschoolingDiscussion; \
+			quit \
+		'
