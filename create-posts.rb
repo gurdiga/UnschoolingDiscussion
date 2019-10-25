@@ -16,9 +16,15 @@ def main
     end
 end
 
+BAD_TOPICS = [5580, 1515]
+
 def create_post(json)
     messages = json["ygData"]["messages"].reverse.map { |m| get_post_data(m) }
     initial_message = messages.first
+
+    return if BAD_TOPICS.include? initial_message["id"]
+
+    last_message = messages.last
 
     responses = messages - [initial_message]
 
@@ -39,7 +45,7 @@ def create_post(json)
 layout: post
 title: >-
   #{initial_message["title"]}
-date: #{initial_message["time"].to_s}
+date: #{last_message["time"].to_s}
 author: >-
   #{initial_message["author"]}
 slug: "#{initial_message["id"]}"
@@ -60,14 +66,14 @@ excerpt_separator: <!--there-is-no-excerpt-separator-expected-ever-->
 end
 
 def format_time(time)
-    (time - 7 * 3600).strftime("%e %b %Y, at %l:%M%P")
+    time.strftime("%e %b %Y, at %l:%M%P")
 end
 
 def get_post_data(message)
     {
         "id" => message["topicId"],
         "title" => CGI.unescapeHTML(message["subject"] || ""),
-        "time" => Time.at(message["postDate"].to_i).utc,
+        "time" => Time.at(message["postDate"].to_i - 7 * 3600),
         "author" => get_author(message),
         "body" => message["messageBody"]
     }
