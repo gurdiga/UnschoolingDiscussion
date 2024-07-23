@@ -1,18 +1,15 @@
 default: posts
 
+rsync:
+	rsync -avz _site/ root@ssh.sandradodd.com:/var/www/site/archive/UnschoolingDiscussion/
+
 build:
-	bundle exec jekyll build --incremental
+	bundle exec jekyll build
 
 start:
-	bundle exec jekyll serve --incremental
+	bundle exec jekyll serve
 
 s: start
-
-# Group: https://groups.yahoo.com/api/v1/groups/AlwaysLearning/
-# Topics: https://groups.yahoo.com/api/v1/groups/AlwaysLearning/topics?count=100
-# Photos: https://groups.yahoo.com/api/v1/groups/AlwaysLearning/photos
-# Links: https://groups.yahoo.com/api/v1/groups/AlwaysLearning/links
-# API docs: https://www.archiveteam.org/index.php?title=Yahoo!_Groups
 
 .ONESHELL:
 
@@ -43,11 +40,18 @@ edit:
 
 e: edit
 
-include .env
-upload:
-	lftp -u gurdiga@sandradodd.com ftp.sandradodd.com \
-		--password $(LFTP_PASSWORD) \
-		-e '\
-			mirror --delete --reverse --parallel=5 --continue _site archive/UnschoolingDiscussion; \
-			quit \
-		'
+a: audit
+audit:
+	bundle exec bundle-audit
+
+au: audit-update
+audit-update:
+	bundle exec bundle-audit update
+
+i: install
+install:
+	bundle install
+
+u: update
+update:
+	bundle update
